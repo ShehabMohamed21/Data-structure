@@ -21,7 +21,7 @@ public class methods implements IPlayersFinder{
 	public void returnSurroundings (String[] photo, Point[] backArray,int[] counter,Point [] allIndexArray ,  int team, int i, int j) 
 	{
 			
-			// check number equal team 
+			
 			allIndexArray[counter[1]++] = new Point(i, j);
 			char cmpr = Character.forDigit(team, 10);
 			if (j < photo.length-1 && photo[j+1].charAt(i) == cmpr && cover(allIndexArray, counter[1], i, j+1) == false) 
